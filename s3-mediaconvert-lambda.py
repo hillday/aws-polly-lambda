@@ -1,6 +1,7 @@
 import json
 import boto3
 import urllib.parse
+import subprocess
 
 def get_json_template():
     template = {
