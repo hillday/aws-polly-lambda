@@ -5,6 +5,8 @@
 
 > `s3-mediaconvert-lambda.py` s3 upload object auto trigger mediaconvert
 
+> `invoke_sagemaker_endpoint.py` invoke sagemaker endpoint
+
 # comliper and upload main.go
 ### complier
 ```
@@ -18,3 +20,20 @@ zip main.zip main
 upload to lambda
 ###
 create Api Gateway router to lambda
+
+# invoke sagamaker endpoint policy
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "sagemaker:InvokeEndpoint",
+            "Resource": "*"
+        }
+    ]
+}
+```
+ create policy and attach to execute role
