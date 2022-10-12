@@ -1,4 +1,4 @@
-## Example3
+## Example4
 [aws-deepracer](https://www.linkedin.com/pulse/samples-reward-functions-aws-deepracer-bahman-javadi?trk=public_profile_article_view)
 
 ### Reward Function
